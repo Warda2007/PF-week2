@@ -1,14 +1,12 @@
 #include<iostream>
 using namespace std;
-main()
+int main()
 {
-int charge;
-int time;
-int current;
-cout<<" Enter the charge in coulombs:" ;
-cin>>charge;
-cout<<" Enter the time in seconds:" ;
-cin>>time;
-current=charge/time;
-cout<<" The current in amperes is:" <<current;
+    char choice='y';
+    while(choice !='N' && choice!='n')
+   {
+     cout<<"I am happy!"<<endl;
+    cout<<"enter your choice: " ;
+    cin>>choice;
+   }
 }

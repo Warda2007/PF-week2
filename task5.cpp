@@ -1,14 +1,11 @@
 #include<iostream>
 using namespace std;
-main()
+int main()
 {
-float length;
-float width;
-float area;
-cout<<" Enter the length of rectangle: ";
-cin>>length;
-cout<<" Enter the width of rectangle: ";
-cin>>width;
-area=length*width;
-cout<<" The area of rectangle is:"<<area;
+    int sum=0;
+    for(int i=0; i<=100; i=i+1)
+    {
+        sum=sum+i;
+    }
+    cout<<sum<<endl;
 }

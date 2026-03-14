@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
-main()
+int main()
 {
-int dollarPrice = 282;
-int dollars;
-int rupees;
-cout<<" Enter amount in dollars: " ;
-cin>>dollars;
-rupees = dollars * dollarPrice;
-cout<<" Dollars "<<dollars<<" Into Rupees are: "<<rupees;
+    int num=0 , sum=0 ;
+     while(num >=0)
+    {
+        sum=sum+num;
+        cout<<"Enter a number: ";
+        cin>>num;
+    }
+    cout<<"Sum:" <<sum;
 }
