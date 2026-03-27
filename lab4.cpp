@@ -1,19 +1,14 @@
- #include<iostream>
- using namespace std;
- int main()
- {
-    int num,digit,digittofind,count=0;
-    cout<<"Enter the number: " ;
-    cin>>num; 
-    cout<<"Enter digit to find frequency: " ;
-    cin>>digittofind;
-    for( ; num>0; num=num/10 )
-   {
-    digit=num%10;
-    if(digit==digittofind){
-    count++ ;
-  }
-   }
-   cout<<"Frequency of " <<digittofind<< "is"<< count;
-
- }
+#include<iostream>
+using namespace std;
+main()
+{
+    int sum=0;
+    float average=0;
+    int number[5]={1,2,3,4,5} ;
+    for(int idx=0; idx<5; idx++){
+        sum=sum+number[idx] ;
+    }
+    average=sum/5 ;
+    cout<<"Sum is: "<<sum<<endl;
+    cout<<"Average is: "<<average<<endl;
+}

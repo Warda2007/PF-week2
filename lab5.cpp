@@ -1,16 +1,24 @@
- #include<iostream>
- using namespace std;
- int main()
- {
-    int n, sum=0 ;
-    cout<<"Enter the number: " ;
-    cin>>n;
-    if(n<0) {
-        n= -n;
+#include<iostream>
+using namespace std;
+main()
+{
+string word;
+char letter;
+bool isFound=false;
+cout<<"Enter the word: ";
+cin>>word;
+cout<<"Enter the character you want to find: ";
+cin>>letter;
+for (int i=0; word[i]!='\0'; i++){
+    if(word[i]==letter){
+        isFound=true;
+        break;
     }
-    while(n>0){
-        sum=sum+(n%10);
-        n=n/10;
-    }
-    cout<<"Sum of digits: " <<sum<< endl;
- }
+}
+if(isFound){
+    cout<<letter<<  "is found in " <<word;
+}else{
+    cout<<letter<< "is not found in "<<word<<endl;
+}
+return 0; 
+}

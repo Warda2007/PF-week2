@@ -1,13 +1,11 @@
 #include<iostream>
 using namespace std;
-int main()
+main()
 {
-    int num=0 , sum=0 ;
-     while(num >=0)
-    {
-        sum=sum+num;
-        cout<<"Enter a number: ";
-        cin>>num;
-    }
-    cout<<"Sum:" <<sum;
+     string word;
+     cout<<"Enter a string:";
+     cin>>word;
+     for(int i=word.length()-1; i>=0; i--){
+        cout<<word[i];
+     }
 }

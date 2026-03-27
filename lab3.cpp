@@ -1,16 +1,16 @@
- #include<iostream>
- using namespace std;
- int main()
- {
-    int num;
-    cout<<"Enter a number: ";
-    cin>>num;
-    int count=0;
-    if(num==0) count=1;
-    while(num!=0)
+#include <iostream>
+using namespace std;
+main()
+{
+    int count;
+    cout << "How many values you want to enter: ";
+    cin >> count;
+    int number[count];
+    for (int i = 0; i < count; i++)
     {
-        num=num/10;
-        count++ ;
+        cout << "Enter the number: ";
+        cin >> number[i];
     }
-    cout<<"Total digits are "<<count<<endl;
- }
+    for (int i = 0; i < count; i++)
+        cout << "The numbers are: " << number[i]<<endl ;
+}

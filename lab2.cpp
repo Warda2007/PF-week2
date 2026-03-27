@@ -1,16 +1,14 @@
- #include<iostream>
- using namespace std;
- int main()
- {
-    int n;
-    cout<<"Enter the length of sequence you want to print: ";
-    cin>>n;
-int a=0, b=1, next;
-for(int i=0; i<n; i++)
+#include<iostream>
+using namespace std;
+main()
 {
-    cout<<a<<" ";
-    next=a+b;
-    a=b;
-    b=next;
+int number[5];
+for(int i=0; i<5; i++)
+{
+    cout<<"Enter the number: ";
+    cin>> number[i];
 }
- }
+cout<<"The first number is: " <<number[0]<<endl;
+cout<<"The last number is: " <<number[4]<<endl;
+
+}

@@ -1,13 +1,20 @@
 #include<iostream>
 using namespace std;
-int main()
+main()
 {
-    int speed;
-    cout<<"Enter the speed of the car(in km/h): " ;
-    cin>>speed;
-    if(speed>100){
-cout<<"Halt....YOU WILL BE CHALLANED!!" ;
-    }else{
-        cout<<"Perfect!! You are going good." ;
+    int n;
+    cout<<"Enter the number of elements: " ;
+    cin>>n;
+    int arr[n];
+    cout<<"enter "<< n<< "elements:" ;
+    for(int i=0;i<n; i++){
+        cin>>arr[i];
     }
+    int count=0;
+    for(int i=0; i<n; i++){
+        if(arr[i]%2==0){
+            count++ ;
+        }
+    }
+    cout<<"Even numbers are: "<<  count<<endl;
 }

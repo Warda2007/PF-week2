@@ -1,12 +1,14 @@
 #include<iostream>
 using namespace std;
-int main()
+main()
 {
-    char choice='y';
-    while(choice !='N' && choice!='n')
-   {
-     cout<<"I am happy!"<<endl;
-    cout<<"enter your choice: " ;
-    cin>>choice;
-   }
+    char word[50]; 
+    cout<<"Enter the word: ";
+    cin>>word;
+    for(int i=0;word[i]!='\0';i++){
+        cout<<"Character "<< word[i] << "is at index"<<i<<endl;
+
+    }
+    
+
 }

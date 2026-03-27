@@ -2,10 +2,16 @@
 using namespace std;
 main()
 {
-float Pounds;
-int Kilograms;
-cout<<" Enter weight in Pounds: ";
-cin>>Pounds;
-Kilograms =Pounds*0.45;
-cout<<" weight in Kilograms is:"<<Kilograms<< "kg";
-} 
+    char str[500], j=0;
+    cout<<"Enter the sentence: ";
+    cin.getline(str,500);
+    for(int i=0; str[i]; i++){
+        if(str[i]!='a' && str[i]!='e' && str[i]!='i' && str[i]!='o' && str[i]!='u' &&
+           str[i]!='A' && str[i]!='E' && str[i]!='I' && str[i]!='O' && str[i]!='U'){
+            str[j++]=str[i];
+           }
+           str[j]='\0';
+    }
+    cout<<"Sentence without vovels : "<< str<<endl;
+
+}

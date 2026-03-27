@@ -1,19 +1,23 @@
 #include<iostream>
+#include<string>
 using namespace std;
-int main()
+main()
 {
-     float speed;
-     cout<<"Enter speed:" ;
-     cin>>speed;
-     if(speed<=10){
-        cout<<"Slow" <<endl;
-     }else if(speed<=50){
-cout<<"Average"<<endl;
-     }else if(speed<=150){
-        cout<<"Fast"<<endl;
-     }else if(speed<=1000){
-        cout<<"Ultra Fast"<<endl;
-     }else if(speed>1000){
-        cout<<"extremely fast"<<endl;
-     }
+    int n;
+    cout<<"Enter the number of students: ";
+    cin>>n;
+    cin.ignore();
+    string name[n];
+    cout<<"Enter name of  " << n<< "students :";
+    for(int i=0; i<n; i++)
+    getline(cin, name[i]);
+for(int i=0; i<n; i++)
+    for(int j=i+1; j<n; j++)
+    if(name[i]>name[j]){
+        string temp =name[i];
+    name[i]=name[j];
+    name[j]=temp;
+    }
+    for(int i=0; i<n; i++)
+    cout<< name[i] <<endl;
 }
